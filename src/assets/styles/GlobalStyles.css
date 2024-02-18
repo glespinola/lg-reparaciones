@@ -1,0 +1,87 @@
+:root {
+  --fuenteHeading: 'Poppins', sans-serif;
+  --fuenteParrafo: 'Open Sans', sans-serif;
+
+  --primario: #2b2d2a;
+  --secundario: #37685b;
+  --gris: #e1e1e1;
+  --blanco: #fff;
+  --negro: #000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px */
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuenteParrafo);
+  font-size: 1.6rem;
+  line-height: 2;
+  height: 100%;
+}
+
+/* Globals */
+
+.container {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuenteHeading);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utils */
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
