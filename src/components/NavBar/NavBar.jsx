@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import LogoImg from '../../assets/img/Logo/logo1.png';
 import './NavBarStyle.css';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState("nav__menu");
@@ -20,15 +21,15 @@ const NavBar = () => {
   return (
     <nav className="nav">
       <div className="nav__container container">
-        <a href="/" className="nav__brand">
+        <Link to="/" className="nav__brand">
         <img src={LogoImg} alt="Logo LG Reparaciones"  className='nav__img'/>
         <h1 className='nav__title'>LG Reparaciones</h1>
-      </a>
+      </Link>
       <ul className={isMenuOpen}>
         <li className="nav__item"><a href="/" className="nav__link">Inicio</a></li>
-        <li className="nav__item"><a href="#cursos" className="nav__link">Cursos</a></li>
-        <li className="nav__item"><a href="#serviciotecnico" className="nav__link">Servicio Tecnico</a></li>
-        <li className="nav__item"><a href="#contacto" className="nav__link">Contacto</a></li>
+        <li className="nav__item"><a href="#" className="nav__link">Cursos</a></li>
+        <li className="nav__item"><a href="#" className="nav__link">Servicio Tecnico</a></li>
+        <li className="nav__item"><a href="#" className="nav__link">Contacto</a></li>
       </ul>
       <div onClick={toggleMenu}className={toggle}>
         <div className="line1"></div>

@@ -1,0 +1,114 @@
+.container__err404 {
+  padding: 8rem 0;
+}
+.error-404 {
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.error-404 h2 {
+  font-size: 60px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 0px 0px 40px 0px;
+  padding: 15px 0px;
+  border-top: solid 3px #ccc;
+  border-bottom: solid 3px #ccc;
+  color: #43e91e;
+}
+
+.page-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0px 0px 30px 0px;
+}
+
+.page-404 p {
+  font-size: 350px;
+  font-weight: bold;
+  line-height: 300px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  color: #43e91e;
+}
+
+.page-404 span {
+  font-size: 48px;
+  content: #fff;
+  font-weight: bold;
+  background-color: #fff;
+  margin: -60px 0px 0px 0px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 60px;
+}
+
+.error-404>p {
+  margin: 0px 0px 30px 0px;
+  font-size: 16px;
+}
+
+.error-404 a.go-back {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  border: solid 1px;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  color: #43e91e;
+  border-color: #43e91e;
+}
+
+.error-404 a.go-back:hover {
+  color: #fff !important;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  background-color: #43e91e;
+}
+
+/* Smartphones */
+@media only screen and (max-width: 768px){
+  .error-404 h2 {
+    font-size: 3rem;
+  }
+  .page-404 p {
+    font-size: 19rem;
+  }
+  .page-404 span {
+    font-size: 2rem;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 40%;
+    line-height: 3rem;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 769px) and (max-width:991px) {
+
+}
+
+/* Laptops */
+@media only screen and (min-width: 992px) and (max-width:1023px) {
+
+}
+
+/* Dekstop */
+@media only screen and (min-width: 1024px){
+  
+}

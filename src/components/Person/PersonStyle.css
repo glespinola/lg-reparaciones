@@ -1,0 +1,55 @@
+.card-person {
+  width: 17em;
+  height: 34em;
+  background: #f7f7f7;
+  transition: 1s ease-in-out;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #aaa;
+}
+
+.card-person span {
+  font-weight: bold;
+  color: #171717;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+}
+
+.card-person .info {
+  font-weight: 400;
+  color: #171717;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1em;
+}
+
+.card-person .img {
+  width: 8em;
+  height:8em;
+  background: #171717;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.card-person .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card-person a {
+  color: #171717;
+  transition: .4s ease-in-out;
+  padding: 0.8em 0;
+  font-size: 2rem;
+}
+
+.card-person a:hover {
+  color: #43e91e;
+}

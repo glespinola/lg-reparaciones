@@ -12,7 +12,7 @@ const Footer = () => {
   	 			<h4>Sobre Nosotros</h4>
           <p>En nuestro centro especializado nos dedicamos con pasión a la reparación y venta de componentes para celulares. Además, ofrecemos cursos de reparación para aquellos que desean aprender y dominar las habilidades necesarias en este campo en constante evolución. Confía en nosotros para cuidar tus dispositivos móviles y maximizar su rendimiento.</p>
   	 		</div>
-  	 		<div className="footer-col" id="contacto">
+  	 		<div className="footer-col">
   	 			<h4>Contacto</h4>
           <ul>
   	 				<li><a href="mailto:lgxreparaciones@gmail.com">E-mail: lgxreparaciones@gmail.com</a></li>
