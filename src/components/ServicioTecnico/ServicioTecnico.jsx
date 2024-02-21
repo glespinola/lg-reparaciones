@@ -10,7 +10,7 @@ const ServicioTecnico = () => {
 
 
   return (
-    <div className="servicio__container">
+    <div className="servicio__container" id="service">
       <h1 className='servicio__title text-center'>Servicio Tecnico de Celulares</h1>
         <h2 className='servicio__subtitle text-center'>¡Déjanos ayudarte a reparar tu celular!</h2>
       <div className='servicio__flex'>

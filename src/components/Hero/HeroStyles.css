@@ -4,7 +4,6 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  
 }
 .hero__info {
   display: flex;
@@ -49,7 +48,7 @@
   color: #000;
   }
   .hero__info {
-
+    padding: 5rem 1rem;
     width: 100%;
     h1 {
       min-width: 30rem;

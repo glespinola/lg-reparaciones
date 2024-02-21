@@ -34,7 +34,7 @@ const Redes = () => {
     social: "Whatsapp",
     img: image4,
     text: "CAMBIO DE MODULO DEL A10S",
-    url: 'https://api.whatsapp.com/message/OGRA27HMM2B7F1?autoload=1&app_absent=0',
+    url: 'https://wa.me/+5491160348107',
     icon: 'fa-whatsapp'
   }
 

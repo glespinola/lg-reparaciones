@@ -22,14 +22,14 @@ const NavBar = () => {
     <nav className="nav">
       <div className="nav__container container">
         <Link to="/" className="nav__brand">
-        <img src={LogoImg} alt="Logo LG Reparaciones"  className='nav__img'/>
-        <h1 className='nav__title'>LG Reparaciones</h1>
-      </Link>
+          <img src={LogoImg} alt="Logo LG Reparaciones"  className='nav__img'/>
+          <h1 className='nav__title'>LG Reparaciones</h1>
+        </Link>
       <ul className={isMenuOpen}>
-        <li className="nav__item"><a href="/" className="nav__link">Inicio</a></li>
-        <li className="nav__item"><a href="#" className="nav__link">Cursos</a></li>
-        <li className="nav__item"><a href="#" className="nav__link">Servicio Tecnico</a></li>
-        <li className="nav__item"><a href="#" className="nav__link">Contacto</a></li>
+        <li className="nav__item"><a href="/"   className="nav__link">Inicio</a></li>
+        <li className="nav__item"><a href="#cursos"  className="nav__link">Cursos</a></li>
+        <li className="nav__item"><a href="#service"  className="nav__link">Servicio Tecnico</a></li>
+        <li className="nav__item"><a href="#contacto"  className="nav__link">Contacto</a></li>
       </ul>
       <div onClick={toggleMenu}className={toggle}>
         <div className="line1"></div>

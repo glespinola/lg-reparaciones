@@ -1,11 +1,12 @@
 import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './FormStyle.css'
+import {ToastifyHelper} from '../../helpers/toastHelpers'
 
 const Form = () => {
   const form = useRef();
   const [formData, setFormData] = useState({
-    nombre: '',
+    name: '',
     email: '',
     message: '',
     phone: ''
@@ -19,25 +20,38 @@ const Form = () => {
     }));
   };
 
+  const resetFormData = () => {
+    setFormData({
+    name: '',
+    email: '',
+    message: '',
+    phone: ''
+    })
+  }
+
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_4oxksfr', 'template_25tfdhe', form.current, '7sslgbX1XSBX3pwCP')
       .then((response) => {
         console.log('Correo enviado correctamente', response);
+        resetFormData();
+        ToastifyHelper({success: true});
       })
       .catch((error) => {
         console.log('Error al enviar el correo', error);
+        ToastifyHelper();
       });
   };
 
   return (
-  <form ref={form} onSubmit={sendEmail} className="form">
+    <form ref={form} onSubmit={sendEmail} className="form">
     <h4 className="title text-center">¿Necesitas ayuda con tu dispositivo?</h4>
     <div className="subtitle text-center">Déjanos tu consulta</div>
 
     <div className="input-container ic1">
-      <input placeholder="" type="text" className="input" id="name" name="name" value={formData.name} onChange={handleInputChange} required/>
+      <input placeholder=" " type="text" className="input" id="name" name="name" value={formData.name} onChange={handleInputChange} required/>
       <div className="cut"></div>
       <label className="iLabel" htmlFor="name">Nombre</label>
     </div>

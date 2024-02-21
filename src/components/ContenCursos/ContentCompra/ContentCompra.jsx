@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import './ContentCompraStyle.css'
 import img1 from '../../../assets/img/ServicioTecnico/phone1.jpg'
 import ModalCompra from './ModalCompra/ModalCompra'
 
-const ContentCompra = () => {
+const ContentCompra = ({nivel, fechas, requisitos, precio}) => {
 
   return (
     <div className="content-1">
@@ -12,7 +13,7 @@ const ContentCompra = () => {
       </div>
       <div className="content-1__compra">
         <div>
-          <h1>Curso de Reparacion de Celulares - Nivel Inicial</h1>
+          <h1>Curso de Reparacion de Celulares - Nivel {nivel}</h1>
           <p className='content-1__stars'>
             4.6 
             <span>
@@ -26,19 +27,21 @@ const ContentCompra = () => {
           </p>
         </div>
         <div className="content-1__precio">
-          <p>$ 60.000</p>
+          <p>$ {precio}</p>
         <ModalCompra />
         </div>
         <div className="content-1__fechas">
           <h4>Próximas Fechas</h4>
           <ul>
-            <li>Lunes 1/4 a Jueves 4/4 de 19:00 a 22:00hs. Modalidad Intensiva. Cuatro Clases en una Semana</li>
-            <li>Sabado 6/4 a 27/4 de 13:00hs a 16:00hs o de 17:00hs a 20:00hs. Modalidad Normal. Una Clase por Semana</li>
+            {fechas.map((element, index) => (
+              <li key={index}>{element}</li>
+            ))}
           </ul>
         </div>
         <div className='content-1__requisitos'>
           <h4>Requisitos</h4>
-          <p>No se requieren conocimientos previos. Perfecto para principiantes.</p>
+          {/* <p>No se requieren conocimientos previos. Perfecto para principiantes.</p> */}
+          <p>{requisitos}</p>
         </div>
         <button className='curso__content--btn'>Comprar este curso</button>
       </div>

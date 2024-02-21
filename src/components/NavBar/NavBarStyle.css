@@ -55,6 +55,9 @@
   cursor: pointer;
   display: none;
 }
+.active {
+  border-bottom: 1px solid #fff;
+}
 
 @media screen and (max-width: 850px) {
   .nav__toggler {

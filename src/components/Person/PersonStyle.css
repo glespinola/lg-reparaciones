@@ -53,3 +53,13 @@
 .card-person a:hover {
   color: #43e91e;
 }
+
+@media only screen and (max-width: 768px) {
+  .card-person {
+    width: 100%;
+  }
+  .card-person .img{
+      width: 18em;
+        height: 12em;
+  }
+}
