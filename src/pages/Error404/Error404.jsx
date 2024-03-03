@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import './Error404Style.css'
-import scrollToTop from "../../hooks/scrollToTop ";
+import scrollToTop from "../../hooks/scrollToTop";
 
 const Error404 = () => {
   

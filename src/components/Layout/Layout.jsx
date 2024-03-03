@@ -1,17 +1,17 @@
-
-import Navbar from "../Navbar/Navbar"
+/* eslint-disable react/prop-types */
 import Footer from "../Footer/Footer"
+import Header from "../Header/Header"
+import Whatsapp from "../WhatsAppIcon/Whatsapp"
 
 
-// eslint-disable-next-line react/prop-types
 const Layout = ({children}) => {
   return (
     <>
-      <Navbar />
-        {children}
+      <Header />
+      {children}
+      <Whatsapp />
       <Footer />
     </>
   )
 }
-
 export default Layout

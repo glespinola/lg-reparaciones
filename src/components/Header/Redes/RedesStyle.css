@@ -1,0 +1,260 @@
+/* Card Redes */
+.card--redes {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 62px;
+  height: 62px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* youtube*/
+.containerTwo:hover {
+  background-color: #ff0000;
+  transition-duration: .3s;
+}
+
+/* facebook*/
+.containerThree:hover {
+  background-color: #316FF6;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 2.2rem;
+}
+.youtubeSvg {
+  width: 3rem;
+}
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Redes Container */
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.redes--cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+
+/* Cards Red */
+.card1 {
+  --white: hsl(0, 0%, 83%);
+  --black: hsl(240, 15%, 9%);
+  --stone-300: hsl(24, 6%, 83%);
+  --pink-500: hsl(165, 41%, 54%);
+
+  cursor: pointer;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-card {
+  display: flex;
+  align-items: center;
+
+  padding: 0.75rem;
+  min-width: 33rem;
+  height: 2.25rem;
+  background-color: var(--stone-300);
+}
+
+.sub-card.category {
+  justify-content: space-between;
+
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.sub-card.named {
+  justify-content: center;
+
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.card1:hover .sub-card.category {
+  transform: translateY(100%);
+}
+
+.card1:hover .sub-card.named {
+  transform: translateY(-100%);
+}
+
+.sub-card .text_span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.sub-card .icon_svg {
+  width: 1.4rem;
+  fill: var(--black);
+}
+
+.card_container {
+  overflow: hidden;
+
+  position: relative;
+  z-index: 5;
+
+  width: 35rem;
+  height: 25rem;
+  background-color: var(--pink-500);
+
+  border-radius: 0.5rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card_container::before {
+  content: "";
+
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 0rem;
+  aspect-ratio: 1;
+  background-color: hsl(240, 15%, 9%, 0.2);
+
+  border-radius: 50%;
+  transform-origin: center;
+
+  transition: all 1s cubic-bezier(1, 0, 0, 1) 0.2s;
+}
+
+.card_container::after {
+  content: "Ver mas";
+
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0rem;
+  box-sizing: border-box;
+  width: 0rem;
+  aspect-ratio: 1;
+  background-color: hsl(240, 15%, 9%, 0.5);
+
+  font-size: 0rem;
+  font-weight: bold;
+  color: var(--white);
+  text-align: center;
+
+  border-radius: 50%;
+  transform-origin: center;
+
+  transition: all 1s cubic-bezier(1, 0, 0, 1) 0s;
+}
+
+.card1:hover .card_container::before {
+  width: 22.5rem;
+
+  transition: all 1s cubic-bezier(1, 0, 0, 1) 0s;
+}
+
+.card1:hover .card_container::after {
+  padding: 1rem;
+  width: 5rem;
+
+  font-size: 0.75rem;
+
+  transition: all 0.3s ease-in-out 0.4s;
+}
+
+.card_container .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 3rem;
+  fill: var(--white);
+}
+
+@media only screen and (max-width: 768px) {
+  .card_container {
+    width: 30rem;
+  }
+  .sub-card {
+    min-width: 28rem;
+    height: 1.8rem;
+  }
+}

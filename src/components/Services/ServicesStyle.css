@@ -1,0 +1,45 @@
+.service {
+  margin: 2rem 0;
+  color: #2b2d2a;
+}
+
+.service__title {
+
+}
+
+.service__image {
+
+}
+
+.service__list {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.service__items{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  line-height: 1.2;
+  color: #2b2d2a;
+
+  h3 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .service__image {
+    display: none;
+  }
+  .service__list {
+
+    padding: 0;
+  }
+}
