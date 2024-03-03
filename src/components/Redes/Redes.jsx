@@ -1,42 +1,15 @@
 /* eslint-disable react/no-unknown-property */
-import { Red } from './Red'
 import './RedesStyle.css'
 import image1 from '../../assets/img/ImagesInstagram/j7pro.jfif'
 import image2 from '../../assets/img/ImagesInstagram/motog100.jfif'
 import image3 from '../../assets/img/ImagesInstagram/motoe7.jfif'
 import image4 from '../../assets/img/ImagesInstagram/a10s.jfif'
+import BoxRedes from './components/BoxRedes'
 
 
 const Redes = () => {
 
-  const img1 = {
-    social: "Instagram",
-    img: image1,
-    text: "CAMBIO DE MODULO SAMSUNG GALAXY J7 PRO 🙌",
-    url: 'https://www.instagram.com/lgreparaciones/',
-    icon: 'fa-instagram'
-  }
-  const img2 = {
-    social: "Facebook",
-    img: image2,
-    text: "CAMBIO DE MODULO MOTO G100✅🤩",
-    url: 'https://www.facebook.com/LGxREPARACIONES',
-    icon: 'fa-facebook'
-  }
-  const img3 = {
-    social: "Youtube",
-    img: image3,
-    text: "CAMBIO DE MODULO PARA EL MOTO E7i",
-    url: 'https://www.youtube.com/channel/UCSdOKlTRLoVCcg6SHtkv7oA',
-    icon: 'fa-youtube'
-  }
-  const img4 = {
-    social: "Whatsapp",
-    img: image4,
-    text: "CAMBIO DE MODULO DEL A10S",
-    url: 'https://wa.me/+5491160348107',
-    icon: 'fa-whatsapp'
-  }
+
 
 
   return (
@@ -65,10 +38,14 @@ const Redes = () => {
         </div> 
       </div>
       <div className="redes--cards">
-        <Red {...img1}/>
-        <Red {...img2}/>
-        <Red {...img3}/>
-        <Red {...img4}/>
+        <BoxRedes img={image1} />
+        <BoxRedes img={image3} />
+        <BoxRedes img={image3} />
+        <BoxRedes img={image3} />
+        <BoxRedes img={image2} />
+        <BoxRedes img={image3} />
+        <BoxRedes img={image4} />
+        <BoxRedes img={image2} />
       </div>
     </section>
   )
