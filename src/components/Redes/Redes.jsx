@@ -37,7 +37,7 @@ const Redes = () => {
           </a>
         </div> 
       </div>
-      <div className="redes--cards">
+      <div className="redes--cards container">
         <BoxRedes img={image1} />
         <BoxRedes img={image3} />
         <BoxRedes img={image3} />

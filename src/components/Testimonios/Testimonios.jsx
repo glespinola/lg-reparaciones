@@ -63,7 +63,7 @@ const Testimonios = () => {
         <p className='testimonios__text'>Descubre lo que nuestros clientes dicen sobre nuestra experiencia en reparación de teléfonos y servicios de atención al cliente. Sus comentarios nos inspiran a seguir mejorando cada día.</p>
       </div>
       <div className="testimonios">
-        <SimpleSlider>
+        <SimpleSlider className="testimonios__s">
           <Testimonio {...testimonio1}/>
           <Testimonio {...testimonio2}/>
           <Testimonio {...testimonio3}/>
@@ -72,6 +72,7 @@ const Testimonios = () => {
           <Testimonio {...testimonio6}/>
           <Testimonio {...testimonio7}/>
           <Testimonio {...testimonio8}/>
+   
         </SimpleSlider>
       </div>
     </section>
