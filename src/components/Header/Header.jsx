@@ -5,8 +5,10 @@ import './HeaderStyle.css';
 const Header = () => {
   return (
     <header className="header">
-      <Logo />  
-      <Navbar />
+      <div className="container header__container">
+        <Logo />  
+        <Navbar />
+      </div>
     </header>
   )
 }

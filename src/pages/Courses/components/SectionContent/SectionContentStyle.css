@@ -1,0 +1,23 @@
+.content-2 {
+  margin: 0 2rem;
+}
+
+.content__title {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: .3rem;
+}
+
+.chevron {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.content-2__list {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.container__list {
+  padding: 0 .7rem;
+}

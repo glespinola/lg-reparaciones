@@ -1,0 +1,15 @@
+.card-certificado {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  color: #212121;
+  background-color: #f7f7f7;
+  flex: 1 0 5rem;
+}
+
+.card-certificado span {
+  font-weight: bold;
+}
+
+.card-certificado p {
+  font-weight: 200;
+}

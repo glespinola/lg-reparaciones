@@ -1,0 +1,13 @@
+.courses {
+  margin: 2rem 0;
+}
+
+.courses-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 1rem;
+  padding: 0 2rem;
+}
+

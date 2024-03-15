@@ -46,7 +46,7 @@ const Testimonios = () => {
     imagenTestimonios: imagenTestimonio6
   }
   const testimonio7 = {
-    name: 'Matias',
+    name: 'Mariano',
     texto: "Nunca pensé que mi teléfono volvería a funcionar tan bien. Gracias por el excelente servicio.",
     imagenTestimonios: imagenTestimonio7
   }
