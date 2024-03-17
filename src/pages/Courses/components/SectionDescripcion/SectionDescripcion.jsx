@@ -7,7 +7,7 @@ const SectionDescripcion = ({descripcion, paraQuienEs, resultados}) => {
     <h3>¿Para quién es este curso?</h3>
     <ul>
       {paraQuienEs.map((element, index) => (
-        <li key={index}><i className='fa fa-check'></i> {element}</li>
+        <li key={index} className='flex'><i className='fa fa-check'></i> <p>{element}</p></li>
       ))}
     </ul>
     <h3>Resultados</h3>

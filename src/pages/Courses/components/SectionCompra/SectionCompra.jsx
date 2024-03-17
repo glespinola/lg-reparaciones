@@ -1,24 +1,24 @@
+/* eslint-disable react/prop-types */
 import './SectionCompraStyle.css';
 import CursoImg from '../../../../assets/img/Cursos/Niveles/nivel2.jpg'
 import ModalCompra from './components/ModalCompra/ModalCompra';
+import ModalFecha from './components/ModalFechas/ModalFechas';
 
-const SectionCompra = () => {
+const SectionCompra = ({title, text, requisitos, date, price}) => {
   return (
-  <>
+  <div className="container-compra">
     <div className="grid-compra">
       <div className="parent1">
         <div className="space-y-4">
-          <h1 className="">Phone Repair Mastery</h1>
+          <h1 className="">{title}</h1>
           <p className="b-default">
-            Learn to fix your phone like a pro. This comprehensive course will teach you everything you need to know
-            about buying, repairing, and maintaining your smartphone. Whether you&apos;re an enthusiast looking to upgrade
-            your skills or a professional aiming to start your repair business, this course has you covered.
+            {text}
           </p>
         </div>
         <div className="space-y">
           <div className="flex">
             <i className="fa fa-calendar"></i>
-            Fechas
+            <ModalFecha {...date}/>
           </div>
           <div className="flex">
             <i className="fa fa-clock"></i>
@@ -26,14 +26,14 @@ const SectionCompra = () => {
           </div>
           <div className="flex">
             <i className="fa fa-check"></i>
-            No se requieren conocimientos previos.
+            {requisitos}
           </div>
         </div>
         <div className="modal">
           <ModalCompra />
         </div>
         <div className="space-y">
-          <p className='t-900'>$ 59.999</p>
+          <p className='t-900'>$ {price}</p>
         </div>
         <div className="space-y">
           <button className="btn-cta t-200">
@@ -50,7 +50,7 @@ const SectionCompra = () => {
         />
       </div>
     </div>
-  </>
+  </div>
   )
 }
 export default SectionCompra

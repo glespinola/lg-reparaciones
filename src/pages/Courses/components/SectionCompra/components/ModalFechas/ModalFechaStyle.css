@@ -1,0 +1,54 @@
+.model-btn-text {
+  font-size: 1.3rem;
+}
+
+.MuiBox-root {
+  overflow-y: auto;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 9999;
+}
+
+.modal-contenido {
+  color: #171717;
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  line-height: 1.2;
+  border-bottom: 1px solid #aaa;
+}
+
+.modal-fechas {
+  font-weight: thin;
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.65rem;
+  }
+
+  line-height: 1.2;
+}
+
+.modal-span {
+  position: relative;
+  left: 95%;
+  top: -.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.modal-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+}

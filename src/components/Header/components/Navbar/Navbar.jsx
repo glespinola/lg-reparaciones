@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import "./NavbarStyle.css";
-import { NavLink } from "react-router-dom";
 
 const  Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState("nav__menu");
@@ -22,9 +22,9 @@ const  Navbar = () => {
     <nav className="nav">
       <ul className={isMenuOpen}>
         <li className="nav__item"><NavLink to="/"   className="nav__link">Inicio</NavLink></li>
-        <li className="nav__item"><NavLink to="/cursos"  className="nav__link">Cursos</NavLink></li>
-        <li className="nav__item"><NavLink to="/service"  className="nav__link">Servicio Tecnico</NavLink></li>
-        <li className="nav__item"><NavLink to="/contacto"  className="nav__link">Contacto</NavLink></li>
+        <li className="nav__item"><a href="#cursos"  className="nav__link">Cursos</a></li>
+        <li className="nav__item"><a href="#services"  className="nav__link">Servicio Tecnico</a></li>
+        <li className="nav__item"><a href="#contacto"  className="nav__link">Contacto</a></li>
       </ul>
       <div onClick={toggleMenu}className={toggle}>
         <div className="line1"></div>

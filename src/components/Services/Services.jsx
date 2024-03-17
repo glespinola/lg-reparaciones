@@ -36,7 +36,7 @@ const contentData =
   },
 ];
   return (
-    <section className="service">
+    <section className="service" id="services">
       <div className="container">
         <div className="service">
           <h2 className="service__title">Servicio Técnico</h2>

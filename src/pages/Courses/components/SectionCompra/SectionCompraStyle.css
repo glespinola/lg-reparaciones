@@ -1,14 +1,11 @@
 .grid-compra {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* Columnas autoresponsivas */
   grid-auto-rows: auto;
-  /* Altura de las filas ajustada al contenido */
   place-items: center;
   grid-gap: 1rem;
-  /* Espacio entre las cajas */
+  width: 100%;
 }
-
 .parent2 {
   height: 95%;
 }

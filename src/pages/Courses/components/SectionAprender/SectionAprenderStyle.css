@@ -1,0 +1,6 @@
+.list__aprender {
+  font-weight: 200;
+  .fa-check {
+    font-size: 1.5rem;
+  }
+}

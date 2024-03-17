@@ -1,3 +1,7 @@
 .content-4 {
   margin:  2rem;
+  .fa-check {
+    font-size: 1.4rem;
+  }
 }
+

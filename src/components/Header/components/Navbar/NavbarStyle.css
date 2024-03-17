@@ -49,7 +49,7 @@
     padding: 2rem;
     flex-direction: column;
     z-index: 9999;
-    background-color: #0f172a;
+    background-color: #2b2d2a;
     border-top: 1px solid #ccc;
     display: none;
     transition: 0.3s ease-in;

@@ -3,7 +3,7 @@ import './SectionIncluyeStyle.css';
 const SectionIncluye = () => {
   return (
   <div className="card-certificado">
-    <span>Este curso inluye:</span>
+    <h3>Este curso inluye:</h3>
     <div>
       <p><i className="fa fa-book"></i> Material didáctico completo</p>
       <p><i className="fa fa-award"></i> Certificado de asistencia y aprobación</p>

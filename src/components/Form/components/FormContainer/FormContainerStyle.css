@@ -25,7 +25,7 @@
   flex-direction: column;
   gap: 35px;
   border: 1px solid #aaa;
-  background: #e3e3e3;
+  background: #fff;
   box-shadow: 6px 6px #aaa,
     6px 6px  #aaa;
   border-radius: 1rem;
@@ -38,7 +38,7 @@
 
 .inputBox input, .inputBox textarea {
   width: 100%;
-  padding: 10px;
+  padding: 1.3rem;
   outline: none;
   border: none;
   color: #000;
@@ -66,11 +66,12 @@
   border-radius: 8px;
 }
 
+
 .inputBox input:valid~span,
 .inputBox input:focus~span
 {
-  transform: translateX(113px) translateY(-15px);
-  font-size: 0.8em;
+  transform: translateX(120px) translateY(-24px);
+  font-size: 1.1rem;
   padding: 5px 10px;
   background: #000;
   letter-spacing: 0.2em;
@@ -88,17 +89,17 @@
 }
 
 .enter {
-  height: 45px;
-  width: 100px;
+  padding: 2rem;
+  width: 12rem;
   border-radius: 5px;
   border: 2px solid #000;
   cursor: pointer;
   background-color: transparent;
   transition: 0.5s;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 1.1rem;
   letter-spacing: 2px;
-  margin-bottom: 1em;
+  margin-bottom: 3rem;
 }
 
 .enter:hover {
@@ -131,25 +132,33 @@ textarea:focus~span {
       top: initial;
       right: initial;
       transform: initial;
+      display: flex;
     }
     .card-text {
       font-size: 1.5rem;
     }
     .card-form {
-      width: 30rem;
+      width: 100%;
       gap: 1.2rem;
     }
     .card-items {
       flex-direction: column;
     }
-        textarea:valid~span,
-        textarea:focus~span {
-          transform: translateX(123px) translateY(-15px);
-          font-size: 0.8em;
-          padding: 5px 10px;
-          background: #000;
-          letter-spacing: 0.2em;
-          color: #fff;
-          border: 2px;
-        }
+    .inputBox {
+      width: 100%;
+      margin: .3rem 0;
+    }
+    .enter {
+      padding: 2rem;
+    }
+    textarea:valid~span,
+    textarea:focus~span {
+      transform: translateX(123px) translateY(-15px);
+      font-size: 0.8em;
+      padding: 5px 10px;
+      background: #000;
+      letter-spacing: 0.2em;
+      color: #fff;
+      border: 2px;
+    }
 }
