@@ -3,14 +3,6 @@
   color: #2b2d2a;
 }
 
-.service__title {
-
-}
-
-.service__image {
-
-}
-
 .service__list {
   display: flex;
   gap: 2rem;
@@ -34,7 +26,7 @@
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
   .service__image {
     display: none;
   }

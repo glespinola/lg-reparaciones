@@ -49,8 +49,8 @@ const FormContainer = () => {
   return (
     <form ref={form} onSubmit={sendEmail} className="container-form">
       <div className="card-form">
-          <p className="t-600 card-title text-center">¿Necesitas ayuda con tu dispositivo?</p>
-          <p className="card-text">Estamos disponibles para ayudarte. Completa el formulario con detalles sobre los problemas de tu teléfono y nuestro equipo de reparación se comunicará contigo rápidamente para brindarte la asistencia necesaria.</p>
+          <p className="t-600 card-title-form text-center">¿Necesitas ayuda con tu dispositivo?</p>
+          <p className="card-text">Estamos disponibles para ayudarte. Completa el formulario con detalles sobre los problemas de tu teléfono.</p>
           <div className="card-items">
             <div className="inputBox">
               <input placeholder=" " type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} required/>

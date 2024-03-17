@@ -1,0 +1,31 @@
+.footer-new {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  color: #bbb;
+}
+
+.footer-container-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+@media (min-width: 1000px) {
+  .footer-maps {
+    max-width: 15rem;
+    height: 30rem;
+  }
+}
+
+.footer-maps {
+  width: 1rem;
+}
+
+@media(max-width: 768px) {
+  .footer-maps {
+    max-width: 10rem;
+    height: 30rem;
+  }
+}

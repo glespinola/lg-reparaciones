@@ -58,7 +58,7 @@ const Testimonios = () => {
 
   return (
     <section className="testimonios--container container b-default">
-      <div className="">
+      <div>
         <h2 className='testimonios__title'>Lo que dicen nuestros clientes</h2>
         <p className='testimonios__text'>Descubre lo que nuestros clientes dicen sobre nuestra experiencia en reparación de teléfonos y servicios de atención al cliente. Sus comentarios nos inspiran a seguir mejorando cada día.</p>
       </div>

@@ -8,13 +8,12 @@ import BoxRedes from './components/BoxRedes'
 
 
 const Redes = () => {
-
-
-
-
   return (
-    <section className="redes">
-      <h2 className='text-center'>Siguenos en las redes sociales!</h2>
+    <section className="redes container">
+      <div className="flex-redes">
+        <h2>Siguenos en las redes sociales</h2>
+        <p className='t-300'>¡Únete a nuestra comunidad en línea para estar al tanto de las últimas novedades!</p>
+      </div>
       <div className="redes-container">
         <div className="card--redes">
           <a href="https://www.instagram.com/lgreparaciones/" className="socialContainer containerOne" rel="noopener noreferrer" target="_blank">
@@ -37,15 +36,11 @@ const Redes = () => {
           </a>
         </div> 
       </div>
-      <div className="redes--cards container">
+      <div className="redes--cards">
         <BoxRedes img={image1} />
-        <BoxRedes img={image3} />
-        <BoxRedes img={image3} />
-        <BoxRedes img={image3} />
         <BoxRedes img={image2} />
         <BoxRedes img={image3} />
         <BoxRedes img={image4} />
-        <BoxRedes img={image2} />
       </div>
     </section>
   )

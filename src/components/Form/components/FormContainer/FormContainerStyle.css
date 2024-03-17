@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 40rem;
+  min-height: 100%;
   max-width: 55rem;
   padding: 2rem;
   flex-direction: column;
@@ -126,7 +126,7 @@ textarea:focus~span {
   border: 2px solid #000;
   border-radius: 8px;
 }
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
     .container-form {
       position: initial;
       top: initial;
@@ -162,3 +162,4 @@ textarea:focus~span {
       border: 2px;
     }
 }
+

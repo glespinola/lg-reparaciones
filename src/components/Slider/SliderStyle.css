@@ -1,7 +1,8 @@
-.slider-container {
-  margin: 2rem 0;
+.slick-active {
+  padding: 1rem;
 }
 
-.slider-container > * {
-  width: 100%;
+.slick-arrow {
+  display: none;
 }
+

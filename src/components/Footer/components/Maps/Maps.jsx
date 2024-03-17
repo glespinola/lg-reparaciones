@@ -1,3 +1,4 @@
+import './MapStyle.css';
 const Maps = () => {
   return (
     <div>
