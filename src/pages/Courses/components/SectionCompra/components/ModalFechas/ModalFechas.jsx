@@ -23,7 +23,7 @@ export default function ModalFecha({normal, intensiva}) {
   const handleClose = () => setOpen(false);
   return (
     <div>
-      <Button className='btn' onClick={handleOpen}><span className='model-btn-text'>Ver las proximas fechas.</span></Button>
+      <Button className='btn' onClick={handleOpen}><span className='model-btn-text'>Ver las proximas fechas</span></Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -35,7 +35,7 @@ export default function ModalFecha({normal, intensiva}) {
         <div className="modal-container">
           <div className="modal-contenido">
             <h3>Fechas de los Cursos</h3>
-            <p>Descubre las dos modalidades de nuestra academia: la intensiva, que ofrece cuatro clases de tres horas cada una durante una semana, y la modalidad normal, con una clase semanal de tres horas.</p>
+            <p>Descubre las dos modalidades de nuestra academia: la <strong>intensiva</strong>, que ofrece cuatro clases de tres horas cada una durante una semana, y la modalidad <strong>normal</strong>, con una clase semanal de tres horas.</p>
           </div>
           <div className="modal-fechas">
             <h4>Modalidad Normal <i className="fa fa-mug-hot"></i></h4>

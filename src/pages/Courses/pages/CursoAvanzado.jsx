@@ -8,10 +8,11 @@ import "../CourseStyle.css"
 const CursoAvanzado = () => {
 
   const contentCompra = {
-    title: "Phone Repair Mastery",
-    text: "Learn to fix your phone like a pro. This comprehensive course will teach you everything you need to know about buying, repairing, and maintaining your smartphone. Whether you're an enthusiast looking to upgrade your skills or a professional aiming to start your repair business, this course has you covered.",
+    title: "Curso Avanzado - Nivel 3",
+    text: "Conviértete en un experto en reparación de teléfonos, dominando las técnicas más avanzadas y resolviendo incluso los problemas más difíciles. Este nivel es para aquellos que buscan destacarse en el campo de la reparación de dispositivos móviles.",
     date: {normal:["Consultar"], intensiva: ["Consultar"]},
     price: "80.000",
+    priceCourse: "45.000",
     requisitos: "Se requieren conocimientos previos o tener realizado Nivel Inicial e Intermedio"
   }
   const contenidoAprender = [

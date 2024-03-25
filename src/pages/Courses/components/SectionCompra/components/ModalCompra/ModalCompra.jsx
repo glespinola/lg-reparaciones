@@ -18,7 +18,7 @@ const style = {
   zIndex: 9999
 };
 
-export default function ModalCompra() {
+export default function ModalCompra({price}) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -57,7 +57,7 @@ export default function ModalCompra() {
           </div>
           <div className="modal-pagos">
             <h4>Cuotas por Mercado Pago <i className="fab fa-cc-visa"></i></h4>
-            <p>Serán 2 cuotas de 45.000 y se cobrarán los días 6 de cada mes.</p>
+            <p>Serán 2 cuotas de {price} y se cobrarán los días 6 de cada mes.</p>
           </div>
           <div className="modal-pagos">
             <h4>Creditos o Débito <i className="fas fa-credit-card"></i></h4>

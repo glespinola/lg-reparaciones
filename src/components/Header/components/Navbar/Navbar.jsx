@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import scrollToTop from "../../../../hooks/scrollToTop";
 
 import "./NavbarStyle.css";
 
 const  Navbar = () => {
+  const scrollRef = scrollToTop();
+
   const [isMenuOpen, setIsMenuOpen] = useState("nav__menu");
   const [toggle, setToggle] = useState("nav__toggler");
   const toggleMenu = () => {
@@ -19,9 +22,12 @@ const  Navbar = () => {
   };
 
   return (
-    <nav className="nav">
-      <ul className={isMenuOpen}>
-        <li className="nav__item"><NavLink to="/"   className="nav__link">Inicio</NavLink></li>
+    <nav className="nav" >
+      
+      <ul 
+      className={isMenuOpen}
+      >
+        <li className="nav__item"><NavLink to="/" onClick={scrollRef}  className="nav__link">Inicio</NavLink></li>
         <li className="nav__item"><a href="#cursos"  className="nav__link">Cursos</a></li>
         <li className="nav__item"><a href="#services"  className="nav__link">Servicio Tecnico</a></li>
         <li className="nav__item"><a href="#contacto"  className="nav__link">Contacto</a></li>

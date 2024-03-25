@@ -8,10 +8,11 @@ import "../CourseStyle.css"
 const CursoIntermedio = () => {
 
   const contentCompra = {
-    title: "Phone Repair Mastery",
-    text: "Learn to fix your phone like a pro. This comprehensive course will teach you everything you need to know about buying, repairing, and maintaining your smartphone. Whether you're an enthusiast looking to upgrade your skills or a professional aiming to start your repair business, this course has you covered.",
+    title: "Curso Intermedio - Nivel 2",
+    text: "Mejora tus habilidades de reparación y aprende técnicas avanzadas para solucionar problemas más complejos. Perfecto para quienes desean perfeccionar sus habilidades en la reparación de teléfonos.",
     date: {normal:["Consultar"], intensiva: ["Consultar"]},
     price: "80.000",
+    priceCourse: "55.000",
     requisitos: "Se requieren conocimientos previos o tener realizado Nivel Inicial."
 
   }

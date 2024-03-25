@@ -4,13 +4,13 @@ import CursoImg from '../../../../assets/img/Cursos/Niveles/nivel2.jpg'
 import ModalCompra from './components/ModalCompra/ModalCompra';
 import ModalFecha from './components/ModalFechas/ModalFechas';
 
-const SectionCompra = ({title, text, requisitos, date, price}) => {
+const SectionCompra = ({title, text, requisitos, date, price, priceCourse}) => {
   return (
   <div className="container-compra">
     <div className="grid-compra">
       <div className="parent1">
         <div className="space-y-4">
-          <h1 className="">{title}</h1>
+          <h1 className="title-compra">{title}</h1>
           <p className="b-default">
             {text}
           </p>
@@ -30,7 +30,10 @@ const SectionCompra = ({title, text, requisitos, date, price}) => {
           </div>
         </div>
         <div className="modal">
-          <ModalCompra />
+          <div className="flex">
+            <i className="fa fa-money-bill-wave"></i>
+            <ModalCompra price={priceCourse}/>
+          </div>
         </div>
         <div className="space-y">
           <p className='t-900'>$ {price}</p>

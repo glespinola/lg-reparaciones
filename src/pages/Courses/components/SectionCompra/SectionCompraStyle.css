@@ -52,7 +52,9 @@
 .space-y {
   padding: 1rem 0;
 }
-
+.title-compra{
+  font-size: 4.5rem;
+}
 @media only screen and (max-width: 768px) {
   .grid-compra {
     grid-template-areas:

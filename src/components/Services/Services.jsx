@@ -1,5 +1,5 @@
 import "./ServicesStyle.css";
-import imgService from "../../assets/img/ServicioTecnico/service.png"
+import imgService from "../../assets/img/ServicioTecnico/service.jpg"
 import ServicesBox from "./components/ServicesBox";
 const Services = () => {
 const contentData = 

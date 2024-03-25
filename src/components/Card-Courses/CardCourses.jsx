@@ -2,7 +2,7 @@ import CoursesBox from "./components/CoursesBox/CoursesBox"
 import "./CoursesStyle.css"
 import nivel1 from "../../assets/img/Cursos/Niveles/nivel1.jpg"
 import nivel2 from "../../assets/img/Cursos/Niveles/nivel2.jpg"
-import nivel3 from "../../assets/img/Cursos/Niveles/nivel12.jpg"
+import nivel3 from "../../assets/img/Cursos/Niveles/nivel3.jpg"
 
 const CardCourses = () => {
 
