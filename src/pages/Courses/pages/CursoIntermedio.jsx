@@ -11,8 +11,9 @@ const CursoIntermedio = () => {
     title: "Curso Intermedio - Nivel 2",
     text: "Mejora tus habilidades de reparación y aprende técnicas avanzadas para solucionar problemas más complejos. Perfecto para quienes desean perfeccionar sus habilidades en la reparación de teléfonos.",
     date: {normal:["Consultar"], intensiva: ["Consultar"]},
-    price: "80.000",
-    priceCourse: "55.000",
+    price: "90.000",
+    priceCourseModal: "50.000",
+    linkCompra: "https://mpago.la/2JLhB1y",
     requisitos: "Se requieren conocimientos previos o tener realizado Nivel Inicial."
 
   }

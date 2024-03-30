@@ -12,7 +12,8 @@ const CursoInicial = () => {
     text: "Aprende los fundamentos para reparar tu teléfono y entender su funcionamiento. Ideal para principiantes que desean adquirir habilidades básicas de reparación.",
     date: {normal:["Sabado 6/4 a 27/4 de 13:00hs a 16:00hs o de 17:00hs a 20:00hs."], intensiva: ["Lunes 1/4 a Jueves 4/4 de 19:00 a 22:00hs."]},
     price: "60.000",
-    priceCourse: "45.000",
+    priceCourseModal: "35.000",
+    linkCompra: "https://mpago.la/24NUeYL",
     requisitos: "No se requieren conocimientos previos."
   }
   const contenidoAprender = [

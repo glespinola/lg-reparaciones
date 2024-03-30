@@ -11,8 +11,9 @@ const CursoAvanzado = () => {
     title: "Curso Avanzado - Nivel 3",
     text: "Conviértete en un experto en reparación de teléfonos, dominando las técnicas más avanzadas y resolviendo incluso los problemas más difíciles. Este nivel es para aquellos que buscan destacarse en el campo de la reparación de dispositivos móviles.",
     date: {normal:["Consultar"], intensiva: ["Consultar"]},
-    price: "80.000",
-    priceCourse: "45.000",
+    price: "130.000",
+    priceCourseModal: "70.000",
+    linkCompra: "https://mpago.la/22HBs2A",
     requisitos: "Se requieren conocimientos previos o tener realizado Nivel Inicial e Intermedio"
   }
   const contenidoAprender = [
